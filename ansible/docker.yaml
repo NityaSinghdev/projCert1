@@ -7,10 +7,10 @@
         name: docker
         state: latest
     - name: Enable service docker
-      ansible.builtin.systemd_service:
+      ansible.builtin.service:
         name: docker
-        enabled: true        
+        enabled: yes        
     - name: Start service docker
-      ansible.builtin.systemd_service:
+      ansible.builtin.service:
         name: docker
         state: started
