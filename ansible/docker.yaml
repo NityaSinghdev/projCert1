@@ -3,7 +3,7 @@
   become: true
   tasks:
     - name: install docker
-      ansible.builtin.yum:
+      ansible.builtin.apt:
         name: docker
         state: latest
     - name: Enable service docker
